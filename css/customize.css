@@ -73,10 +73,6 @@ a.btn.btn-info.btn-lg.btn-cta-bottom {
   margin-bottom: -8rem;
 }
 
-a.btn.btn-info.btn-lg.btn-cta-bottom:nth-child(2) {
-  margin-left: 1rem;
-}
-
 /* 767px */
 @media screen and (max-width: 47.9375rem) {
   .showcase .showcase-text {
