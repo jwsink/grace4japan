@@ -1,0 +1,292 @@
+/* Fonts */
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+h1 {
+  font-size: 2.2rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.introverse {
+  font-weight: 700;
+}
+
+.lead {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.hero h1 {
+  text-shadow: #000 .2rem .2rem 1.2rem;
+}
+
+.introverse {
+  font-size: .8rem;
+}
+
+.connectwithus a {
+  font-size: 1rem;
+}
+
+/* Color */
+
+body,
+.introverse {
+  color: #343a40;
+}
+
+.hero h1,
+.introverse {
+  text-align: center;
+}
+
+.hero,
+.button {
+  color: #fff;
+}
+
+.button {
+  background-color: #14a2b8;
+}
+
+.fa-brands,
+.fab {
+  color: #14a2b8;
+}
+
+
+.introverse {
+  background: rgba(255, 255, 255, 0.877);
+}
+
+
+/* Display */
+
+.lead,
+.logo-serge {
+  display: block;
+}
+
+.button,
+.sociallinks a {
+  display: inline-block;
+}
+
+/* Flexbox */
+
+body,
+.hero>.container,
+.connectwithus>.container,
+.sociallinks {
+  display: flex;
+}
+
+body {
+  flex-flow: column;
+}
+
+.hero>.container {
+  justify-content: space-between;
+}
+
+.connectwithus>.container,
+.sociallinks {
+  justify-content: center;
+}
+
+.connectwithus>.container {
+  flex-flow: row;
+}
+
+.hero>.container {
+  align-items: center;
+  flex-flow: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Components */
+
+.container {
+  margin: 0 auto;
+  max-width: 68.75rem;
+  width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+.button {
+  line-height: 1.6rem;
+}
+
+.button {
+  margin: 1rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 1.5rem 1rem .8rem 1rem;
+}
+
+.hero {
+  background-image: url(../img/bg-masthead.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+.hero>.container {
+  padding: 2rem 0 10rem;
+}
+
+.hero h1 {
+  margin-top: 4rem;
+  text-align: center;
+}
+
+.lead {
+  margin-top: .5rem;
+}
+
+.button {
+  padding: .5rem .3rem;
+  text-shadow: none;
+}
+
+.hero .button {
+  margin: 1rem;
+}
+
+.hero .button:first-child {
+  margin: 5rem 1rem 1rem;
+}
+
+.introverse {
+  bottom: 0;
+  left: 0;
+  padding: 1rem;
+  position: absolute;
+  right: 0;
+}
+
+.introverse p {
+  margin: 0 auto;
+  max-width: 20rem;
+}
+
+.logo-serge {
+  height: auto;
+  margin: 0 auto;
+  max-width: 12rem;
+}
+
+#ourstory .sectionpic,
+#ourteam .sectionpic {
+  background-position: center;
+  background-size: cover;
+  min-height: calc(100vw * .6);
+}
+
+#ourstory .sectionpic {
+  background-image: url(../img/bg-section02.jpg);
+}
+
+#ourteam .sectionpic {
+  background-image: url(../img/bg-section01.jpg);
+}
+
+.connectwithus {
+  background-image: url(../img/bg-cta.jpg);
+  background-position: center bottom;
+  background-size: cover;
+  min-height: 14rem;
+  padding: calc(100vw * .25) 0 0;
+}
+
+.connectwithus .button {
+  margin-top: 4.5rem;
+}
+
+footer {
+  padding-bottom: 1.3rem;
+}
+
+.sociallinks {
+  list-style-type: none;
+}
+
+.sociallinks a {
+  margin: .5rem 1rem;
+}
+
+.copyright {
+  text-align: center;
+}
+
+/* responsive */
+
+@media screen and (min-width: 750px) {
+  .introverse {
+    display: flex;
+  }
+
+  #ourstory,
+  #ourteam {
+    display: flex;
+  }
+
+  #ourstory .sectionpic,
+  #ourteam .sectionpic {
+    min-height: unset;
+  }
+
+  .sectionpic {
+    flex: 1;
+  }
+
+  .text-summary {
+    flex: 1;
+  }
+
+  #ourteam .text-summary {
+    order: 1;
+  }
+
+  #ourteam .sectionpic {
+    order: 2;
+  }
+}
+
+@media screen and (min-width: 770px) {
+  .hidein-desktop {
+    display: none;
+  }
+}
