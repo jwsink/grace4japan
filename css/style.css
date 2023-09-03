@@ -1,7 +1,6 @@
 /* Fonts */
 
 body {
-  background-color: #fff;
   font-family: 'Lato', sans-serif;
 }
 
@@ -203,10 +202,15 @@ p {
   max-width: 20rem;
 }
 
-.logo-serge {
+.wrapper-logo-serge {
   height: auto;
   margin: 0 auto;
-  max-width: 12rem;
+  width: 100%;
+}
+
+.logo-serge {
+    width: 40%;
+    margin: 0 auto;
 }
 
 #ourstory .sectionpic,
@@ -256,8 +260,15 @@ footer {
 
 @media screen and (min-width: 750px) {
   .introverse {
+    align-items: center;
     display: flex;
   }
+
+  .logo-serge {
+    margin-right: 0;
+    max-width: 17.5rem;
+    width: 40%;
+}
 
   #ourstory,
   #ourteam {
